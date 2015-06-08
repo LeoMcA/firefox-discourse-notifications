@@ -1,0 +1,162 @@
+/* colours */
+
+#main {
+  background: #fff;
+}
+
+#main, #sidebar button:hover, #sidebar button:focus, #sidebar button:active, #sidebar button.active {
+  border-color: #a6a6a6;
+}
+
+#sidebar button:hover, #sidebar button:focus, #sidebar button:active, #sidebar button.active {
+  background: #ddd;
+}
+
+#sidebar button:active, #sidebar button.active {
+  box-shadow: inset 0 1px #ccc;
+}
+
+#sidebar {
+  color: #333;
+}
+
+#sidebar .badge {
+  background: #00f;
+  color: #fff;
+}
+
+#main .notifications .unread {
+  background: #E0F5FF;
+}
+
+#main .notifications a:hover, #main .notifications a:focus {
+  background: #FFFFA6;
+}
+
+#main .notifications i {
+  color: #919191;
+}
+
+#main .notifications span {
+  color: #222;
+}
+
+/* general */
+
+@font-face {
+  font-family: "04b-03";
+  src: local("04b03"),
+       url("./04b_03/04B_03__.TTF");
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+a:active, a:focus, ::-moz-focus-inner {
+  outline: 0px none;
+  border: none;
+}
+
+/* main */
+
+#main {
+  flex: auto;
+  overflow-y: scroll;
+  padding: 4px;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+#main > * {
+  display: none;
+}
+
+#main .active-panel {
+  display: block;
+}
+
+/* main/notifications */
+
+#main .notifications {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+#main .notifications a {
+  text-decoration: none;
+  display: block;
+  padding: 2px;
+}
+
+#main .notifications i {
+  width: 13px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+#main .notifications p {
+  display: inline;
+}
+
+/* sidebar */
+
+#sidebar {
+  width: 30px;
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+#sidebar-top {
+  flex: auto;
+}
+
+#sidebar-bottom {
+  height: 30px;
+}
+
+#sidebar button {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  margin: 4px;
+  padding: 2px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  box-sizing: content-box;
+  background: none;
+}
+
+#sidebar .badge {
+  min-width: 7px;
+  padding-left: 2px;
+  padding-right: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "04b-03";
+  font-size: 8px;
+  line-height: 9px;
+  display: none;
+  border-radius: 2px;
+}
+
+#sidebar button.notifications .badge {
+  display: block;
+}
+
+#sidebar img {
+  width: 16px;
+  height: 16px;
+}

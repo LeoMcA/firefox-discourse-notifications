@@ -1,0 +1,12 @@
+{
+  "title": "Discourse Notifications",
+  "name": "firefox-discourse-notifications",
+  "version": "0.1.0",
+  "description": "A Firefox add-on which helpfully displays notifications from the Discourse instance(s) you're logged into.",
+  "main": "index.js",
+  "author": "Leo McArdle <leomcardle@gmail.com>",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MPL 2.0"
+}
