@@ -1,0 +1,10 @@
+data/04b_03
+!data/04b_03/04B_03__.TTF
+data/Font-Awesome
+!data/Font-Awesome/css/font-awesome.min.css
+!data/Font-Awesome/fonts/fontawesome-webfont.woff
+test
+.*
+*.xpi
+*.xcf
+TODO.md
