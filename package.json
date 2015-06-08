@@ -8,5 +8,5 @@
   "engines": {
     "firefox": ">=38.0a1"
   },
-  "license": "MPL 2.0"
+  "license": "MPL-2.0"
 }
