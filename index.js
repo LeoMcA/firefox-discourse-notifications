@@ -30,6 +30,7 @@ var panel = Panel({
 
 if (Storage.instances) {
   for (hash in Storage.instances) {
+    Storage.instances[hash].notifications = undefined
     createInstance(Storage.instances[hash])
   }
 } else {
