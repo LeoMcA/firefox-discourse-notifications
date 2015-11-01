@@ -1,3 +1,7 @@
+MessageBus.baseUrl = 'http://discourse.local/'
+MessageBus.start()
+MessageBus.subscribe("/notification/2", function (data) { console.err(data) })
+
 // stores
 
 var unread = {}

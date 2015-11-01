@@ -22,7 +22,11 @@ var button = ToggleButton({
 
 var panel = Panel({
   contentURL: './panel.html',
-  contentScriptFile: './panel.js',
+  contentScriptFile: [
+    './message_bus/assets/jquery-1.8.2.js',
+    './message_bus/assets/message-bus.js',
+    './panel.js'
+    ],
   onHide: function () {
     button.state('window', { checked: false })
   }
